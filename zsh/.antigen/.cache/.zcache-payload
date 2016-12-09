@@ -1,0 +1,20 @@
+#-- START ZCACHE GENERATED FILE
+#-- GENERATED: Fri Dec  9 15:21:26 EST 2016
+#-- ANTIGEN v1.2.4
+#-- SOURCE: /Users/ben/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/themes/wezm.zsh-theme
+PROMPT='$(git_prompt_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%{$fg[yellow]%}%#%{$reset_color%} '
+RPROMPT='%{$fg[green]%}%~%{$reset_color%}'
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}("
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})%{$fg[red]%}⚡%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+;#-- END SOURCE
+fpath+=()
+unset __ZCACHE_FILE_PATH
+export _ANTIGEN_BUNDLE_RECORD="
+https://github.com/robbyrussell/oh-my-zsh.git themes/wezm.zsh-theme theme true "
+export _ZCACHE_CACHE_LOADED=true
+export _ZCACHE_CACHE_VERSION=v1.2.4
+#-- END ZCACHE GENERATED FILE
+
