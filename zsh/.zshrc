@@ -14,7 +14,7 @@ ENABLE_CORRECTION="false"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-ZSH_CUSTOM="~/dotfiles/zsh/custom"
+# ZSH_CUSTOM="~/dotfiles/zsh/custom/"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -60,10 +60,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # enable antigen
 source $(brew --prefix)/share/antigen/antigen.zsh
-
-# enable zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
