@@ -14,8 +14,6 @@ ENABLE_CORRECTION="false"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# ZSH_CUSTOM="~/dotfiles/zsh/custom/"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -58,9 +56,26 @@ export PATH=$PATH:~/scripts
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:$GOPATH/bin
 
+export EDITOR='subl'
+
+# if [[ -z "$TMUX" ]]
+# then
+#     ID="`tmux ls | grep -vm1 attached | cut -d: -f1`"
+#     if [[ -z "$ID" ]]
+#     then
+#         tmux new-session
+#     else
+#         tmux attach-session -t "$ID"
+#     fi
+# fi
+
 # enable antigen
 source $(brew --prefix)/share/antigen/antigen.zsh
 
+#tmuxinator
+source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+#ios-v4 tmux session
+mux start ios 
