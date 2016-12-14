@@ -36,6 +36,6 @@ windows:
       panes:
         - git:
           - g fetch && g pull && g st 
-        - stats:
-          - htop
+        - prefs:
+          - cd ~/dot
             
