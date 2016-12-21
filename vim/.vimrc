@@ -1,3 +1,7 @@
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 set encoding=utf-8
 
 " Sets how many lines of history VIM has to remember
@@ -108,5 +112,29 @@ set noswapfile
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
+
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-git'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+
+
+""""""""""""""""""""""""""""""
+" => Set up nerd tree on start
+""""""""""""""""""""""""""""""
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+filetype on
+
+
+
 
 
