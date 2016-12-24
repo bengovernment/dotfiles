@@ -32,7 +32,7 @@ root: ~/projects/ios-v4
 
 windows:
   - git:
-      layout: main-horizontal
+      layout: main-vertical
       panes:
         - git:
           - g fetch && g pull && g st 
