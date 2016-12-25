@@ -1,15 +1,10 @@
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
 set encoding=utf-8
 
 " Sets how many lines of history VIM has to remember
 set history=700
 
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -19,7 +14,11 @@ let g:mapleader = "\<Space>"
 " Fast saving
 nmap <leader>w :w!<cr>
 
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" source other configs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+source $HOME/dot/vim/.vim/config/nav.vim
+source $HOME/dot/vim/.vim/config/plugins.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -33,7 +32,7 @@ inoremap jk <ESC>
 set wildmenu
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
+se wildignore=*.o,*~,*.pyc
 
 "Always show current position
 set ruler
@@ -59,6 +58,8 @@ set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch
+
+set mouse=v
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -113,15 +114,6 @@ set noswapfile
 " Always show the status line
 set laststatus=2
 
-Plugin 'gmarik/vundle'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-git'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-
-
 """"""""""""""""""""""""""""""
 " => Set up nerd tree on start
 """"""""""""""""""""""""""""""
@@ -133,8 +125,3 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 filetype on
-
-
-
-
-

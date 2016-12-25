@@ -42,6 +42,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -69,13 +71,15 @@ export EDITOR='subl'
 #     fi
 # fi
 
-# enable antigen
-source $(brew --prefix)/share/antigen/antigen.zsh
+
 
 #tmuxinator
 source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
 
+#fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+
 
 #ios-v4 tmux session
 mux start ios 
