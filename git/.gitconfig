@@ -19,6 +19,7 @@
 	cur = rev-parse --short head 
 	st = status
 	br = branch
+	rh = reset HEAD
 	t = tag
 	cp = cherry-pickg q
 	cur = rev-parse --short HEAD
@@ -61,7 +62,7 @@
 	helper = osxkeychain
 
 [diff]
-    tool = colordiff
+        tool = colordiff
 
 [filter "lfs"]
 	clean = git-lfs clean %f
