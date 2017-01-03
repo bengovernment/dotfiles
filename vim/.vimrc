@@ -47,6 +47,15 @@ set hid
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
+filetype plugin indent on
+" show existing tab with 4 spaces width
+ set tabstop=4
+" " when indenting with '>', use 4 spaces width
+ set shiftwidth=4
+" " On pressing tab, insert 4 spaces 
+set expandtab
+
+
 " Ignore case when searching
 set ignorecase
 
@@ -116,5 +125,10 @@ set laststatus=2
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
+
+"set special cursors for each mode"
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 filetype on
