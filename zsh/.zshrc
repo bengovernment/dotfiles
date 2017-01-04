@@ -41,12 +41,17 @@ export PATH=$PATH:~/bin
 export PATH=$PATH:~/scripts
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:~/Library/Python/2.7/bin
 
 export EDITOR='vim'
 
 
 #tmuxinator
 source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
+
+#powerline
+. /Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
 
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
