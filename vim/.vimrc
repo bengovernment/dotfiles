@@ -19,6 +19,7 @@ nmap <leader>w :w!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/dot/vim/.vim/config/nav.vim
 source $HOME/dot/vim/.vim/config/plugins.vim
+source $HOME/dot/vim/.vim/config/airline.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
