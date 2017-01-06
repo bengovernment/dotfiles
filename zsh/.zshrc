@@ -53,6 +53,8 @@ source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
 #powerline
 source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
 
+#ruby
+source /Users/ben/.rvm/scripts/rvm
 
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -61,3 +63,5 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 #ios-v4 tmux session
 mux start ios 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
