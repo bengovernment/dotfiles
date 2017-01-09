@@ -1,18 +1,17 @@
 filetype off
-
 set encoding=utf-8
 
 " Sets how many lines of history VIM has to remember
 set history=700
 
-
 " With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
 
 " Fast saving
 nmap <leader>w :w!<cr>
+nmap <leader>q :q!<cr>
+nmap <leader>s :source ~/.vimrc<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " source other configs
@@ -23,6 +22,9 @@ source $HOME/dot/vim/.vim/config/airline.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" airline theme
+let g:airline_theme='laederon'
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -39,7 +41,7 @@ se wildignore=*.o,*~,*.pyc
 set ruler
 
 " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
 set hid
@@ -50,9 +52,9 @@ set whichwrap+=<,>,h,l
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
- set tabstop=4
+set tabstop=4
 " " when indenting with '>', use 4 spaces width
- set shiftwidth=4
+set shiftwidth=4
 " " On pressing tab, insert 4 spaces 
 set expandtab
 
@@ -69,7 +71,7 @@ set hlsearch
 " Makes search act like search in modern browsers
 set incsearch
 
-set mouse=v
+set mouse=a
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -95,7 +97,6 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
 set background=dark
 
 " Set extra options when running in GUI mode
