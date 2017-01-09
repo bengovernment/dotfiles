@@ -64,4 +64,7 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 #ios-v4 tmux session
 mux start ios 
 
+# force tmux load
+tmux source-file ~/.tmux.conf
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

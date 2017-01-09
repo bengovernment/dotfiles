@@ -1,7 +1,7 @@
 # ~/.tmuxinator/ios.yml
 
-name: ios
-root: ~/projects/ios-v4
+name: vnext
+root: ~/projects/vnext
 
 # Optional tmux socket
 # socket_name: foo
@@ -13,7 +13,7 @@ root: ~/projects/ios-v4
 # pre_window: rbenv shell 2.0.0-p247
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
-# tmux_options: -f ~/.tmux.mac.conf
+tmux_options: -f ~/.tmux.conf
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
@@ -35,7 +35,7 @@ windows:
       layout: main-vertical
       panes:
         - git:
-          - g fetch && g pull && g st 
-        - prefs:
-          - cd ~/dot
+          - g st
+        - source:
+            - cd PlayMakerVN/
             
