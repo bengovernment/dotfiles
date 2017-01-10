@@ -1,0 +1,101 @@
+{
+    "groups": {
+        "branch": {
+            "bg": "royalblue5",
+            "fg": "gray61"
+        },
+        "branch_clean": {
+            "bg": "royalblue5",
+            "fg": "gray61"
+        },
+        "branch_dirty": {
+            "bg": "royalblue5",
+            "fg": "yellow"
+        },
+        "continuation": {
+            "bg": "darkgreencopper",
+            "fg": "lightyellow"
+        },
+        "continuation:current": {
+            "attr": [
+                "bold"
+            ],
+            "bg": "darkgreencopper",
+            "fg": "oldlace"
+        },
+        "cwd": {
+            "bg": "darkgreencopper",
+            "fg": "lightyellow"
+        },
+        "cwd:current_folder": {
+            "attr": [
+                "bold"
+            ],
+            "bg": "darkgreencopper",
+            "fg": "oldlace"
+        },
+        "cwd:divider": {
+            "bg": "darkgreencopper",
+            "fg": "gray61"
+        },
+        "environment": {
+            "bg": "green",
+            "fg": "oldlace"
+        },
+        "exit_fail": {
+            "bg": "red",
+            "fg": "oldlace"
+        },
+        "exit_success": {
+            "bg": "green",
+            "fg": "oldlace"
+        },
+        "hostname": {
+            "bg": "darkgreencopper",
+            "fg": "oldlace"
+        },
+        "jobnum": {
+            "bg": "darkgreencopper",
+            "fg": "oldlace"
+        },
+        "mode": {
+            "attr": [
+                "bold"
+            ],
+            "bg": "green",
+            "fg": "oldlace"
+        },
+        "superuser": {
+            "attr": [
+                "bold"
+            ],
+            "bg": "red",
+            "fg": "oldlace"
+        },
+        "user": {
+            "attr": [
+                "bold"
+            ],
+            "bg": "blue",
+            "fg": "oldlace"
+        },
+        "virtualenv": {
+            "bg": "green",
+            "fg": "oldlace"
+        }
+    },
+    "mode_translations": {
+        "vicmd": {
+            "groups": {
+                "mode": {
+                    "attr": [
+                        "bold"
+                    ],
+                    "bg": "blue",
+                    "fg": "oldlace"
+                }
+            }
+        }
+    },
+    "name": "mine"
+}
