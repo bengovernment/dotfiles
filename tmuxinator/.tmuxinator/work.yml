@@ -1,7 +1,7 @@
-# ~/.tmuxinator/play.yml
+# ~/.tmuxinator/ios.yml
 
-name: play
-root: ~/
+name: work
+root: ~/projects/v4
 
 # Optional tmux socket
 # socket_name: foo
@@ -13,13 +13,13 @@ root: ~/
 # pre_window: rbenv shell 2.0.0-p247
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
-# tmux_options: -f ~/.tmux.mac.conf
+tmux_options: -f ~/.tmux.conf
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: editor
+# startup_window: git
 
 # Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
@@ -28,14 +28,10 @@ root: ~/
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t play
+# post: tmux -CC attach -t ios
 
 windows:
-  - editor:
-      layout: main-vertical
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
-      panes:
-        - play:
-          - ls -l
+  - work:
+      - g st
+  - dot:
+      - g st

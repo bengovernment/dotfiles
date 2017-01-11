@@ -7,7 +7,7 @@ export ZSH=/Users/ben/.oh-my-zsh
 #
 #ZSH_THEME="geometry"
 
-ENABLE_CORRECTION="false"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -52,6 +52,9 @@ source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
 
 #powerline
 source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
+#powerline config env
+export XDG_CONFIG_HOME=~/.config/powerline
+powerline-daemon
 
 #ruby
 source /Users/ben/.rvm/scripts/rvm
@@ -60,11 +63,10 @@ source /Users/ben/.rvm/scripts/rvm
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
+#run tmuxinator
+mux start work
 
-#ios-v4 tmux session
-mux start ios 
-
-# force tmux load
+#force tmux load config
 tmux source-file ~/.tmux.conf
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
