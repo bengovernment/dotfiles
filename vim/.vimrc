@@ -19,6 +19,7 @@ nmap <leader>s :source ~/.vimrc<cr>
 source $HOME/dot/vim/.vim/config/nav.vim
 source $HOME/dot/vim/.vim/config/plugins.vim
 source $HOME/dot/vim/.vim/config/airline.vim
+source $HOME/dot/vim/.vim/config/nerdtree.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -132,17 +133,5 @@ nnoremap <CR> :noh<CR><CR>
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-
-"nerdtree config
-" open NT when there's no file specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" open NT when a dir is opened
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeShowHidden=1
 
 filetype on

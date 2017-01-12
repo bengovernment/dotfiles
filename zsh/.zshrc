@@ -5,7 +5,7 @@ export ZSH=/Users/ben/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #
-#ZSH_THEME="geometry"
+ZSH_THEME="sonicradish"
 
 ENABLE_CORRECTION="true"
 
@@ -51,10 +51,10 @@ export EDITOR='vim'
 source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
 
 #powerline
-source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
+#source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
 #powerline config env
-export XDG_CONFIG_HOME=~/.config/powerline
-powerline-daemon
+#export XDG_CONFIG_HOME=~/.config/powerline
+#powerline-daemon
 
 #ruby
 source /Users/ben/.rvm/scripts/rvm
