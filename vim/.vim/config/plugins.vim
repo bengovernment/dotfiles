@@ -14,6 +14,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
 Plug 'sickill/vim-monokai'
-Plug 'scrooloose/nerdtree' { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree' 
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
