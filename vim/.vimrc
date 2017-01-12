@@ -12,6 +12,7 @@ let g:mapleader = "\<Space>"
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 nmap <leader>s :source ~/.vimrc<cr>
+nmap <leader>f :Files<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " source other configs
@@ -23,6 +24,7 @@ source $HOME/dot/vim/.vim/config/nerdtree.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set number
 " airline theme
 let g:airline_theme='laederon'
 
