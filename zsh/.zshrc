@@ -63,8 +63,6 @@ source /Users/ben/.rvm/scripts/rvm
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
-#run tmuxinator
-mux start work
 
 #force tmux load config
 tmux source-file ~/.tmux.conf

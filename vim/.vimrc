@@ -24,9 +24,6 @@ source $HOME/dot/vim/.vim/config/nerdtree.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set number
-" airline theme
-let g:airline_theme='laederon'
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
