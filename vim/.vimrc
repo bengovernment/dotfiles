@@ -79,8 +79,6 @@ set lazyredraw
 " For regular expressions turn magic on
 set magic
 
-" Show matching brackets when text indicator is over them
-set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -132,5 +130,10 @@ nnoremap <CR> :noh<CR><CR>
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+""""""""""""""""""""""""""""""
+" => emmet
+""""""""""""""""""""""""""""""
+
 
 filetype on

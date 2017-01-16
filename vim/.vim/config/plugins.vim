@@ -16,5 +16,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'sickill/vim-monokai'
 Plug 'scrooloose/nerdtree' 
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
