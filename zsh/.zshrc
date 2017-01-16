@@ -48,7 +48,7 @@ export EDITOR='vim'
 
 
 #tmuxinator
-source "/Users/ben/dot/tmuxinator/tmuxinator.zsh"
+source "/Users/ben/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
 
 #powerline
 #source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
