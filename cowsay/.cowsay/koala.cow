@@ -1,0 +1,13 @@
+##
+## From the canonical koala collection
+##
+$eye = chop($eyes)
+$the_cow = <<EOC;
+  $thoughts
+   $thoughts
+       ___  
+     {~${eye}_${eye}~}
+      ( Y )
+     ()~*~()   
+     (_)-(_)   
+EOC

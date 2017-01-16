@@ -1,0 +1,16 @@
+##
+## An elephant out and about
+##
+$eye = chop($eyes);
+$the_cow = <<EOC;
+ $thoughts     /\\  ___  /\\
+  $thoughts   // \\/   \\/ \\\\
+     ((    $eye $eye    ))
+      \\\\ /     \\ //
+       \\/  | |  \\/ 
+        |  | |  |  
+        |  | |  |  
+        |   o   |  
+        | |   | |  
+        |m|   |m|  
+EOC
