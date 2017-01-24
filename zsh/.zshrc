@@ -45,7 +45,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
 
 export EDITOR='vim'
-
+export COWPATH="$COWPATH:$HOME/.cowsay"
 
 #tmuxinator
 source "/Users/ben/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
