@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/ben/.oh-my-zsh
 
+# add custom functions to fpath
+fpath=($ZSH/custom/functions $fpath)
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
