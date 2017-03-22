@@ -1,7 +1,7 @@
 # ~/.tmuxinator/ios.yml
 
-name: work
-root: ~/projects/v4
+name: bouncer
+
 
 # Optional tmux socket
 # socket_name: foo
@@ -31,7 +31,11 @@ tmux_options: -f ~/.tmux.conf
 # post: tmux -CC attach -t ios
 
 windows:
-  - work:
-      - g st
-  - dot:
-      - g st
+  - zsh:
+      root: ~/bouncer
+      panes:
+      - tree
+  - ssh:
+      root: ~/bouncer/aws/keys
+      panes:
+      - ssh -i "innernette.pem" ec2-user@ec2-54-88-21-121.compute-1.amazonaws.com
