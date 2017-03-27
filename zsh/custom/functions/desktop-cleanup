@@ -1,0 +1,23 @@
+#clean up cruft on the desktop.
+
+Y="\033[1;33m"
+R="\033[0;31m"
+G="\033[0;32m"
+B="\033[0;34m"
+NC="\033[0m"
+
+echo "${G}Cleaning up image cruft:${R}"
+
+for a in ~/Desktop/*.(png|jpg|jpeg|gif)(.N); do 
+	rm -rv $a;
+; done
+
+echo "${Y}... Done!"
+
+echo "${G}Cleaning up misc cruft:${R}"
+
+for a in ~/Desktop/*.(zip|dmg|pkg|tar*|pdf|json|xlsx|docx)(.N); do
+	rm -ri $a;
+; done
+
+echo "${Y}... Done!"

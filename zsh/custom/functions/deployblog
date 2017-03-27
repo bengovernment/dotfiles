@@ -1,0 +1,26 @@
+
+Y="\033[1;33m"
+R="\033[0;31m"
+G="\033[0;32m"
+B="\033[0;34m"
+NC="\033[0m"
+
+echo "Contents of benpalmer.io s3 bucket: ${Y}"
+
+s3cmd ls s3://benpalmer.io
+
+echo "${NC} Uploding contents of ${G}~/projects/bengovernment.io/_site/${NC} to s3 bucket..."
+
+
+ERROR=$(s3cmd put -r ~/projects/benpalmer.io/_site/ s3://benpalmer.io/ 2>&1 >/dev/null)
+
+
+if [ $? -eq 0 ]
+then
+    echo "all done" | toilet -F gay -f mono12 -F border
+else
+    echo "${R}"
+    echo $ERROR | cowsay 
+    echo "${G}"
+fi
+

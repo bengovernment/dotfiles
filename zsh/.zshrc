@@ -2,7 +2,8 @@
 export ZSH=/Users/ben/.oh-my-zsh
 
 # add custom functions to fpath
-fpath=($ZSH/custom/functions $fpath)
+export ZSH_CUSTOM=(~/dot/zsh/custom)
+fpath=(~/dot/zsh/custom/functions $fpath)
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -10,10 +11,10 @@ fpath=($ZSH/custom/functions $fpath)
 #
 ZSH_THEME="sonicradish"
 
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -30,6 +31,9 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
+s() { pwd > ~/.save_dir ; }
+i() { cd "$(cat ~/.save_dir)" ; }
 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
