@@ -9,7 +9,7 @@
     fetch = +refs/tags/*:refs/tags/*
 
 [user] 
-	name = bengovernment
+	name = "Ben"
 	email = benj.c.palmer@gmail.com
 
 [core]
