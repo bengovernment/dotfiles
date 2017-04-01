@@ -9,8 +9,8 @@
     fetch = +refs/tags/*:refs/tags/*
 
 [user] 
-	name = Ben Palmer
-	email = ben.palmer@playmakercrm.com
+	name = bengovernment
+	email = benj.c.palmer@gmail.com
 
 [core]
 	autocrlf = input
