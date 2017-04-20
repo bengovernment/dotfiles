@@ -28,7 +28,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# ssh
+# ssh22
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 
@@ -48,6 +48,7 @@ i() { cd "$(cat ~/.save_dir)" ; }
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/scripts
 export PATH=$PATH:/usr/bin
+export PATH=$PATH:/usr/local
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
 
@@ -55,23 +56,23 @@ export EDITOR='vim'
 export COWPATH="$COWPATH:$HOME/.cowsay"
 
 #tmuxinator
-source "~/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
+# source "~/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
 
-#powerline
-#source "~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
-#powerline config env
-#export XDG_CONFIG_HOME=~/.config/powerline
-#powerline-daemon
+# #powerline
+# #source "~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
+# #powerline config env
+# #export XDG_CONFIG_HOME=~/.config/powerline
+# #powerline-daemon
 
-#ruby
-source ~/.rvm/scripts/rvm
+# #ruby
+# source ~/.rvm/scripts/rvm
 
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 
-#force tmux load config
-tmux source-file ~/.tmux.conf
+# #force tmux load config
+# tmux source-file ~/.tmux.conf
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
