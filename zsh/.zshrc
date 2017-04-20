@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ben/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # add custom functions to fpath
-export ZSH_CUSTOM=(~/dot/zsh/custom)
+export ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -14,7 +14,7 @@ ZSH_THEME="sonicradish"
 ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="false"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -55,16 +55,16 @@ export EDITOR='vim'
 export COWPATH="$COWPATH:$HOME/.cowsay"
 
 #tmuxinator
-source "/Users/ben/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
+source "~/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
 
 #powerline
-#source "/Users/ben/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
+#source "~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
 #powerline config env
 #export XDG_CONFIG_HOME=~/.config/powerline
 #powerline-daemon
 
 #ruby
-source /Users/ben/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
