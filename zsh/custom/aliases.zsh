@@ -12,7 +12,7 @@ alias tree='tree -aC -I '.git''
 alias g='git'
 
 #cat
-alias cat='ccat'
+alias cat='cat'
 
 #web
 alias ws='python -m SimpleHTTPServer 8000'
@@ -28,7 +28,7 @@ alias siri='say -v samantha'
 alias editzsh='subl ~/oh-my-zsh'
 
 #vim
-alias vim='/usr/local/bin/vim'
+alias vim='/usr/bin/vim'
 alias v='vim'
 
 alias mux='tmuxinator'
