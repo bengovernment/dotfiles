@@ -76,3 +76,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 # tmux source-file ~/.tmux.conf
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+  
+# do this to auto set the proxy when you start terminal  
+proxy on

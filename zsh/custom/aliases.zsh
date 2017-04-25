@@ -43,3 +43,6 @@ alias kjs='pkill -f jekyll'
 
 #cordova
 alias cor='cordova'
+
+#chrome
+alias devchrome='open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir --allow-file-access-from-files'

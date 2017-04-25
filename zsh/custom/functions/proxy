@@ -1,102 +1,31 @@
-# ====== Usage ======
-# proxy on - on
-# proxy off - off
-# proxy auto - check to see if there is a response from the server then set accordingly
-# proxy set <proxy:port | position> - set to the specified proxy, very specific about format
-# ----------- EXAMPLES ------------
-# proxy set 2 - will set the proxy to the 2nd position in the proxylist
-# proxy set awesome.proxy.proxy.net:8080 - will attempt to set the proxy to passed in address
-# ----------- Note ----------------
-# add as many proxy values to the proxylist variable that you need
-# add as many export variables as you need
+if [[ $1 && $1 = "off" ]]; then  
+    local proxy=  
+fi  
 
+# using on or there is a response from ping set it  
+if [[ $1 && $1 = "on" ]] then  
+    local proxyset=http://proxy-bos-v.fmr.com:8000
+fi  
 
-    # helper to parse url and port
-    function proxyparseurl(){
-        echo $1 | sed -e 's/http\:\/\///g' | awk 'BEGIN{FS=":"}{for (i=1; i<=NF; i++) print $i}'
-    }
-    # helper to ping url
-    function pingproxy(){
-        ping -c 1 -i 1 $1 | grep 'received' | awk -F',' '{ print $2 }' | awk '{ print $1 }'
-    }
+if [ $1 ]; then  
+    export proxy=$proxyset  
+    export http=$proxyset  
+    export HTTP_PROXY=$proxyset  
+    export HTTPS_PROXY=$proxyset  
+    export http_proxy=$proxyset  
+    export https_proxy=$proxyset  
+    export RSYNC_PROXY=$proxyset  
+    export ALL_PROXY=$proxyset  
 
-    # set the default proxy and port as the first position
-    local proxylist=(proxy-bos-v.fmr.com:8000 http.proxy.fmr.com:8000)
-    #local defaultproxy=(`echo ${proxylist[0]} | sed -e 's/http\:\/\///g' | awk 'BEGIN{FS=":"}{for (i=1; i<=NF; i++) print $i}'`)
-    local defaultproxy=(`proxyparseurl ${proxylist[0]}`)
-    local proxy=${defaultproxy[0]}
-    local port=${defaultproxy[1]}
-    local numre='^[0-9]+$'
+    if [ $proxyset ]; then  
+        npm config set proxy $proxyset  
+        npm config set http-proxy $proxyset  
+        npm config set https-proxy $proxyset  
+    else  
+        npm config delete proxy  
+        npm config delete http-proxy  
+        npm config delete https-proxy  
+    fi  
+fi  
 
-    # if auto check for default proxy then set if reachable
-    if [[ $1 && $1 = "auto" ]]; then
-        local resp=$(pingproxy $proxy)
-        if [ $resp == 1 ]; then
-            echo "proxy detected"
-        else
-            echo "proxy not detected"
-            local proxy=
-        fi
-    # if off turn off the proxy
-    elif [[ $1 && $1 = "off" ]]; then
-        local proxy=
-    # if set use attempt set
-    elif [[ $1 && $1 = "set" ]]; then
-        # check for incoming variable
-        if [ $2 ]; then
-            local setin2=$2
-            # check if the variable is a number to set positionally form list
-            if [[ $2 =~ $numre ]]; then
-                local setin2=${proxylist[$(($2-1))]}
-                if [ -z "$setin2" ]; then
-                    echo "proxy list position not found, falling back to default"
-                    local setin2=${proxylist[0]}
-                fi
-            fi
-
-            # if not check the address passed in
-            local setin=(`proxyparseurl $setin2`)
-            local resp=(`pingproxy ${setin[0]}`)
-
-            #if there is no response don't set it
-            if [[ $resp == 0  || -z "$resp" ]]; then
-                echo "no response from suggested proxy EXAMPLE:proxy.fmr.com:8000"
-                return
-            else
-                local proxy=${setin[0]}
-                local port=${setin[1]}
-            fi
-        else
-            echo "please pass in a proxy address when using set"
-        fi
-    fi
-
-
-    # using on or there is a response from ping set it
-    if [[ $1 && $1 = "on" || $resp && $resp == 1 ]]; then
-        local proxyset=http://$proxy:$port
-    fi
-
-    if [ $1 ]; then
-        export proxy=$proxyset
-        export http=$proxyset
-        export HTTP_PROXY=$proxyset
-        export HTTPS_PROXY=$proxyset
-        export http_proxy=$proxyset
-        export https_proxy=$proxyset
-        export RSYNC_PROXY=$proxyset
-        export ALL_PROXY=$proxyset
-
-        # if [ $proxyset ]; then
-        #     npm config set proxy $proxyset
-        #     npm config set http-proxy $proxyset
-        #     npm config set https-proxy $proxyset
-        # else
-        #     npm config delete proxy
-        #     npm config delete http-proxy
-        #     npm config delete https-proxy
-        # fi
-    fi
-
-    echo "proxy is set to '$http_proxy'"
-
+echo "proxy is set to '$http_proxy'"  
