@@ -1,6 +1,4 @@
 # **DOTFILES** #
-       "Like a trooper, the carpenter sharpens his own tools."
-                 ~ Miyamoto Musashi, "Go Rin No Sho"
 
 		 __________________________________
 		/ Bushydo -- the way of the shrub. \
