@@ -1,4 +1,4 @@
-# **DOTFILES** #
+# **dotfiles®** #
 
 		 __________________________________
 		/ Bushydo -- the way of the shrub. \
@@ -82,7 +82,16 @@ rescan package for new files
 `stow -R bash`
 
 
-Notes:
+###Notes: ###
 ------
 	*zsh function proxy is a stripped down version of Mike Santoro's wonderful proxy function.
+
+
+
+
+		“All the good music has already been written by people with wigs and stuff.” 
+		                            ― Frank Zappa
+
+
+
 
