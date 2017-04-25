@@ -21,21 +21,22 @@
 				~ Colin Carr, 3/2017
 
   
-A repository of dotfiles and tools managed by GNU STOW, version controlled by GIT, and based upon the work of the illustrious colin carr. 
+A repository of dotfiles and tools managed by GNU STOW, version controlled by GIT, and based upon the work of the illustrious Colin Carr. 
 
 Configure all the things. 💻
 
 
+```diff
++_______ _______ _______ _______ _______ _______ _______ _______
++|\     /|\     /|\     /|\     /|\     /|\     /|\     /|\     /|
++| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
++| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |
++| |D  | | |O  | | |T  | | |F  | | |I  | | |L  | | |E  | | |S  | |
++| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
++|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
+
 ```
-_______ _______ _______ _______ _______ _______ _______ _______
-|\     /|\     /|\     /|\     /|\     /|\     /|\     /|\     /|
-| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
-| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |
-| |D  | | |O  | | |T  | | |F  | | |I  | | |L  | | |E  | | |S  | |
-| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
-|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
-
-
+```
  vim          			> .vimrc, configs and plugins
  git            		> global git config and aliases
  ranger             	> filebrowser config
@@ -89,10 +90,8 @@ rescan package for new files
 `stow -R bash`
 
 
-###Notes: ###
-------
-	*zsh function proxy is a stripped down version of Mike Santoro's wonderful proxy function.
-
+### Notes: ###
+zsh function proxy is a stripped down version of Mike Santoro's wonderful proxy function.
 
 
 
