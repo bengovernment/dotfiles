@@ -15,7 +15,7 @@
 [core]
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /Users/ben/.gitignore_global
+	excludesfile = /Users/a549721/.gitignore_global
 
 [alias]
 	co = checkout 
