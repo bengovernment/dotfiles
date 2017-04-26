@@ -5,35 +5,15 @@ export ZSH=~/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#
-ZSH_THEME="sonicradish"
 
+COMPLETION_WAITING_DOTS="false"
 ENABLE_CORRECTION="false"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="false"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# ssh22
+# ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-
-s() { pwd > ~/.save_dir ; }
-i() { cd "$(cat ~/.save_dir)" ; }
 
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/scripts
@@ -46,7 +26,6 @@ export COWPATH="$COWPATH:$HOME/.cowsay"
 
 #antigen
 source /usr/local/share/antigen/antigen.zsh
-
 
 #tmuxinator
 source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
@@ -72,3 +51,11 @@ tmux source-file ~/.tmux.conf
   
 # do this to auto set the proxy when you start terminal  
 proxy on
+
+# save cwd
+s() { pwd > ~/.save_dir ; }
+i() { cd "$(cat ~/.save_dir)" ; }
+
+
+#set theme with antigen
+antigen theme XsErG/zsh-themes themes/lazyuser
