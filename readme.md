@@ -16,8 +16,7 @@
 		jQuery Mobile, Knockout, Meteor, Ampersand, Flight, Mithril, Polymer, 
 		React and Flux but don't forget ActionScript, AtScript, CoffeeScript, 
 		Dart, JScript, LiveScript, Objective-J, Elm, JSX, JSweet and  Closure Compiler.
-		 All fixed bad coders - Guaranteed™! 
-		 Situations like this created Ada.
+		All fixed bad coders - Guaranteed™!  Situations like this created Ada.
 				~ Colin Carr, 3/2017
 
   
