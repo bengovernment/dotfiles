@@ -35,34 +35,27 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 s() { pwd > ~/.save_dir ; }
 i() { cd "$(cat ~/.save_dir)" ; }
 
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh
-
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/scripts
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
-
 export EDITOR='vim'
 export COWPATH="$COWPATH:$HOME/.cowsay"
 
-#tmuxinator
-# source "~/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
+#antigen
+source /usr/local/share/antigen/antigen.zsh
 
-# #powerline
-# #source "~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
-# #powerline config env
-# #export XDG_CONFIG_HOME=~/.config/powerline
-# #powerline-daemon
+
+#tmuxinator
+source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
+
+# # powerline
+# source "~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
+# powerline config env
+# export XDG_CONFIG_HOME=~/.config/powerline
+# powerline-daemon
 
 # #ruby
 # source ~/.rvm/scripts/rvm
@@ -73,7 +66,7 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 
 # #force tmux load config
-# tmux source-file ~/.tmux.conf
+tmux source-file ~/.tmux.conf
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
   
