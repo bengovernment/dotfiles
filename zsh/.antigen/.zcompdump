@@ -1,4 +1,4 @@
-#files: 796	version: 5.3.1
+#files: 797	version: 5.3.1
 
 _comps=(
 '-' '_precommand'
@@ -109,6 +109,7 @@ _comps=(
 'animate' '_imagemagick'
 'anno' '_mh'
 'ant' '_ant'
+'antigen' '_antigen'
 'antiword' '_antiword'
 'aodh' '_openstack'
 'aoss' '_precommand'
@@ -813,6 +814,7 @@ _comps=(
 'murano' '_openstack'
 'mush' '_mail'
 'mutt' '_mutt'
+'mux' '_tmuxinator'
 'mx' '_hosts'
 'mysql' '_mysql_utils'
 'mysqladmin' '_mysql_utils'
@@ -911,6 +913,13 @@ _comps=(
 'pine' '_pine'
 'pinef' '_pine'
 'ping' '_ping'
+'pip' '_pip'
+'pip-2.7' '_pip'
+'pip-3.2' '_pip'
+'pip-3.3' '_pip'
+'pip-3.4' '_pip'
+'pip2' '_pip'
+'pip3' '_pip'
 'piuparts' '_piuparts'
 'pkg' '_pkg5'
 'pkg-config' '_pkg-config'
@@ -1189,6 +1198,7 @@ _comps=(
 'tkinfo' '_texinfo'
 'tla' '_tla'
 'tmux' '_tmux'
+'tmuxinator' '_tmuxinator'
 'todo' '_devtodo'
 'todo.sh' '_todo.sh'
 'toilet' '_toilet'
@@ -1694,7 +1704,8 @@ autoload -Uz _brew _brew_cask _SUSEconfig _a2ps _a2utils \
             _zfs _zfs_dataset _zfs_keysource_props _zfs_pool _zftp \
             _zip _zle _zlogin _zmodload _zmv \
             _zoneadm _zones _zpool _zpty _zsh \
-            _zsh-mime-handler _zsocket _zstyle _ztodo _zypper
+            _zsh-mime-handler _zsocket _zstyle _ztodo _zypper \
+            _pip
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs
