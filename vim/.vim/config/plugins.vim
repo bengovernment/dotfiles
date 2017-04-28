@@ -18,4 +18,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mattn/emmet-vim'
 
+
+"" syntax plugins
+Plug 'hail2u/vim-css3-syntax'
+Plug 'skammer/vim-css-color'
+Plug 'cakebaker/scss-syntax.vim'
+
 call plug#end()

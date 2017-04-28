@@ -41,11 +41,11 @@ export EDITOR='vim'
 export COWPATH="$COWPATH:$HOME/.cowsay"
 
 
-# #tmuxinator
-# source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
+#tmuxinator
+source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
 
-# # #force tmux load config
-# tmux source-file ~/.tmux.conf
+# #force tmux load config
+tmux source-file ~/.tmux.conf
   
 # do this to auto set the proxy when you start terminal  
 proxy on
@@ -73,4 +73,9 @@ source ~/dot/zsh/custom/aliases.zsh
 
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+# # --files: List files that would be searched but do not search
+# # --no-ignore: Do not respect .gitignore, etc...
+# # --hidden: Search hidden files and folders
+# # --follow: Follow symlinks
+# # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'

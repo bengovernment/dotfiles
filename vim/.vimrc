@@ -2,7 +2,7 @@ filetype off
 set encoding=utf-8
 
 " Sets how many lines of history VIM has to remember
-set history=700
+set history=1200
 
 " With a map leader it's possible to do extra key combinations
 let mapleader = "\<Space>"
@@ -21,6 +21,7 @@ source $HOME/dot/vim/.vim/config/nav.vim
 source $HOME/dot/vim/.vim/config/plugins.vim
 source $HOME/dot/vim/.vim/config/airline.vim
 source $HOME/dot/vim/.vim/config/nerdtree.vim
+source $HOME/dot/vim/.vim/config/search.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -33,6 +34,9 @@ inoremap jk <ESC>
 
 " Turn on the WiLd menu
 set wildmenu
+
+" disable autocommenting for all files (paste comments disabled)
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r
 
 " Ignore compiled files
 se wildignore=*.o,*~,*.pyc
