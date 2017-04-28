@@ -1,53 +1,51 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # add custom functions to fpath
 export ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
 
+# zsh settings
 COMPLETION_WAITING_DOTS="false"
 ENABLE_CORRECTION="false"
 
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
+#android home
+export ANDROID_HOME=$HOME/Library/android/sdk
+
+
+# path setup
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/scripts
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+
+
+
+#editor
 export EDITOR='vim'
+
+
+# moo moos
 export COWPATH="$COWPATH:$HOME/.cowsay"
 
-#antigen
-source /usr/local/share/antigen/antigen.zsh
 
-#tmuxinator
-source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
+# #tmuxinator
+# source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
 
-# # powerline
-# source "~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh"
-# powerline config env
-# export XDG_CONFIG_HOME=~/.config/powerline
-# powerline-daemon
-
-# #ruby
-# source ~/.rvm/scripts/rvm
-
-#fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-
-
-# #force tmux load config
-tmux source-file ~/.tmux.conf
-
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# # #force tmux load config
+# tmux source-file ~/.tmux.conf
   
 # do this to auto set the proxy when you start terminal  
 proxy on
@@ -56,6 +54,23 @@ proxy on
 s() { pwd > ~/.save_dir ; }
 i() { cd "$(cat ~/.save_dir)" ; }
 
+# antigen
+source /usr/local/share/antigen/antigen.zsh
 
-#set theme with antigen
-antigen theme XsErG/zsh-themes themes/lazyuser
+# powerline zsh
+POWERLEVEL9K_INSTALLATION_PATH=$HOME/.antigen/bundles/bhilburn/powerlevel9k
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
+
+# antigen theme
+antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen apply
+
+
+#aliases
+source ~/dot/zsh/custom/aliases.zsh
+
+
+#fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
