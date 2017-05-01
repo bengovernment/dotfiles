@@ -62,6 +62,8 @@ set shiftwidth=4
 " " On pressing tab, insert 4 spaces 
 set expandtab
 
+" show line numbers
+set number
 
 " Ignore case when searching
 set ignorecase
@@ -100,6 +102,7 @@ set tm=500
 syntax enable
 
 set background=dark
+colorscheme darkburn
 
 " Set extra options when running in GUI mode
 if has("gui_running")

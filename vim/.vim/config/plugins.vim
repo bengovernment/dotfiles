@@ -17,11 +17,17 @@ Plug 'sickill/vim-monokai'
 Plug 'scrooloose/nerdtree' 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mattn/emmet-vim'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-fugitive'
 
 
 "" syntax plugins
 Plug 'hail2u/vim-css3-syntax'
 Plug 'skammer/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim'
+
+"" themes
+Plug 'flazz/vim-colorschemes'
+
 
 call plug#end()
