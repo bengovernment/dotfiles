@@ -19,7 +19,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-fugitive'
-
+Plug 'scrooloose/nerdcommenter'
 
 "" syntax plugins
 Plug 'hail2u/vim-css3-syntax'
