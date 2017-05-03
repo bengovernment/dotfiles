@@ -59,8 +59,8 @@ source /usr/local/share/antigen/antigen.zsh
 
 # powerline zsh
 POWERLEVEL9K_INSTALLATION_PATH=$HOME/.antigen/bundles/bhilburn/powerlevel9k
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
 
 # antigen theme
 antigen theme bhilburn/powerlevel9k powerlevel9k
