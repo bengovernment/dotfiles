@@ -1,40 +1,39 @@
-# **dotfiles®** #
 
-		 __________________________________
-		/ Bushydo -- the way of the shrub. \
-		| Bonsai! 							|
-		\        ~Unix Fortune              /
-		 ----------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+```
+_______ _______ _______ _______ _______ _______ _______ _______
+|\     /|\     /|\     /|\     /|\     /|\     /|\     /|\     /|
+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
+| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |
+| |D  | | |O  | | |T  | | |F  | | |I  | | |L  | | |E  | | |S  | |
+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
+|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
 
-		"Dojo, YUI, ExtJS, jQuery UI, Ember, Cappuccino, SproutCore, GWT, Angular, 
-		Angular 1.2, Angular 1.3, Angular 2, NOT-Angualar 3 but Angular 4, Sencha, 
-		jQuery Mobile, Knockout, Meteor, Ampersand, Flight, Mithril, Polymer, 
-		React and Flux but don't forget ActionScript, AtScript, CoffeeScript, 
-		Dart, JScript, LiveScript, Objective-J, Elm, JSX, JSweet and  Closure Compiler.
-		All fixed bad coders - Guaranteed™!  Situations like this created Ada.
-				~ Colin Carr, 3/2017
+```
+
+	 __________________________________
+	/ Bushydo -- the way of the shrub. \
+	| Bonsai! 			    |
+	\        ~Unix Fortune              /
+	 ----------------------------------
+		\   ^__^
+		 \  (oo)\_______
+		    (__)\       )\/\
+			||----w |
+			||     ||
+
+	"Dojo, YUI, ExtJS, jQuery UI, Ember, Cappuccino, SproutCore, GWT, Angular, 
+	Angular 1.2, Angular 1.3, Angular 2, NOT-Angualar 3 but Angular 4, Sencha, 
+	jQuery Mobile, Knockout, Meteor, Ampersand, Flight, Mithril, Polymer, 
+	React and Flux but don't forget ActionScript, AtScript, CoffeeScript, 
+	Dart, JScript, LiveScript, Objective-J, Elm, JSX, JSweet and  Closure Compiler.
+	All fixed bad coders - Guaranteed™!  Situations like this created Ada.
+			~ Colin Carr, 3/2017
 
   
 A repository of dotfiles and tools managed by GNU STOW, version controlled by GIT, and based upon the work of the illustrious Colin Carr. 
 
 Configure all the things. 💻
 
-
-```diff
-+_______ _______ _______ _______ _______ _______ _______ _______
-+|\     /|\     /|\     /|\     /|\     /|\     /|\     /|\     /|
-+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
-+| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |
-+| |D  | | |O  | | |T  | | |F  | | |I  | | |L  | | |E  | | |S  | |
-+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
-+|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
-
-```
 ```
  vim          			> .vimrc, configs and plugins
  git            		> global git config and aliases
@@ -89,12 +88,8 @@ rescan package for new files
 `stow -R bash`
 
 
-### Notes: ###
-zsh function proxy is a stripped down version of Mike Santoro's wonderful proxy function.
 
-
-
-		“All the good music has already been written by people with wigs and stuff.” 
+	“All the good music has already been written by people with wigs and stuff.” 
 		                            ― Frank Zappa
 
 
