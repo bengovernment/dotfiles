@@ -38,16 +38,16 @@ Configure all the things. 💻
 ```
  vim          			> .vimrc, configs and plugins
  git            		> global git config and aliases
- ranger             	> filebrowser config
+ ranger             		> filebrowser config
  zsh           			> shell settings, aliases, and configs
 
  iterm2         		> default profile preferences
  htop           		> best top
- tmux					> tmux settings
- tmuxinator				> many tmuxes for good health
- fzf					> junegunn/fzf config
- cowsay					> critically important .cowfiles
- aw						> ansiweather, cute.
+ tmux				> tmux settings
+ tmuxinator			> many tmuxes for good health
+ fzf				> junegunn/fzf config
+ cowsay				> critically important .cowfiles
+ aw				> ansiweather, cute.
 
 ```
 
