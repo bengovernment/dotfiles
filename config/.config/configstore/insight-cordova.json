@@ -1,17 +1,4 @@
 {
 	"clientId": 448718780788,
-	"queue": {
-		"1493054579640 e3f93c4a-5163-46e3-a16a-55d2c0a3bd81": {
-			"path": "/telemetry/off/via-cli-prompt-choice/successful",
-			"type": "pageview"
-		},
-		"1493054506198 2f4d9239-dbed-4a3f-9575-82aaa451c9fc": {
-			"path": "/telemetry/off/via-cli-prompt-choice/successful",
-			"type": "pageview"
-		},
-		"1493054619160 aa132273-22e2-4131-9d78-01c64ba5d7cf": {
-			"path": "/telemetry/off/via-cli-prompt-choice/successful",
-			"type": "pageview"
-		}
-	}
+	"optOut": true
 }
