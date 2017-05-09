@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh installation.
+#
 export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -17,8 +18,9 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 
 #android home
-export ANDROID_HOME=$HOME/Library/android/sdk
-
+export ANDROID_HOME=$HOME/Library/android/sdk/
+export ANDROID_TOOLS=$ANDROID_HOME/tools
+export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
 
 # path setup
 export PATH=$PATH:~/bin
@@ -27,8 +29,8 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_TOOLS
+export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
 
 
 
@@ -59,7 +61,7 @@ source /usr/local/share/antigen/antigen.zsh
 
 # powerline zsh
 POWERLEVEL9K_INSTALLATION_PATH=$HOME/.antigen/bundles/bhilburn/powerlevel9k
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs)
 
 # antigen theme
