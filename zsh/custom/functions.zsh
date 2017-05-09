@@ -4,6 +4,8 @@ magic-enter () {
 		if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
 			echo -ne '\n'
 			git status -sb
+        else
+            ls
 		fi
 		zle accept-line
 	else
