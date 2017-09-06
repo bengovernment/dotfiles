@@ -14,7 +14,7 @@ export PATH=$PATH:$ANDROID_HOME
 export PATH=$PATH:$ANDROID_TOOLS
 export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
 
-export ZSH_THEME="powerlevel9k/powerlevel9k"
+export ZSH_THEME="mortalscumbag"
 
 export ZSH=~/.oh-my-zsh
 
