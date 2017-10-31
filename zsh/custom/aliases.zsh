@@ -16,7 +16,7 @@ alias cat='ccat'
 
 #web
 alias ws='python -m SimpleHTTPServer 8000'
-
+alias py='python3'
 #locations
 alias ohmyzsh='~/.oh-my-zsh'
 
