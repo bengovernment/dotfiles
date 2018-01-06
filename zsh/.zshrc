@@ -10,11 +10,11 @@ export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
+export PATH=$PATH:~/Library/Python/3.6/bin
 export PATH=$PATH:$ANDROID_HOME
 export PATH=$PATH:$ANDROID_TOOLS
 export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
 
-export ZSH_THEME="mortalscumbag"
 
 export ZSH=~/.oh-my-zsh
 
@@ -22,7 +22,8 @@ export ZSH=~/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
-
+# powerlevel theme
+export ZSH_THEME="norm"
 # zsh settings
 COMPLETION_WAITING_DOTS="false"
 ENABLE_CORRECTION="false"
