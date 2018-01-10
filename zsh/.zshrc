@@ -1,7 +1,6 @@
 # Path to your oh-my-zsh installation.
 #
 
-echo "kill me"
 # path setup
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/scripts
@@ -78,9 +77,3 @@ i() { cd "$(cat ~/.save_dir)" ; }
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 
-# do this to auto set the proxy when you start terminal  
-if [ "$(git config --global user.email)" = "benj.c.palmer@gmail.com" ]; then
-	proxy off
-else
-	proxy on
-fi

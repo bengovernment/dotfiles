@@ -13,6 +13,7 @@ nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 nmap <leader>s :source ~/.vimrc<cr>
 nmap <leader>f :Files<cr>
+imap <C-Return> <CR><CR><C-o>k<Tab>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " source other configs
@@ -54,13 +55,17 @@ set hid
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-filetype plugin indent on
+filetype indent on
 " show existing tab with 4 spaces width
+set noexpandtab
+
 set tabstop=4
-" " when indenting with '>', use 4 spaces width
 set shiftwidth=4
-" " On pressing tab, insert 4 spaces 
-set expandtab
+" autoindent
+set autoindent
+
+set smartindent
+
 
 " show line numbers
 set number
