@@ -4,7 +4,7 @@ fi
 
 # using on or there is a response from ping set it  
 if [[ $1 && $1 = "on" ]] then  
-    local proxyset=http://proxy-bos-v.fmr.com:8000
+    local proxyset=""
 fi  
 
 if [ $1 ]; then  
