@@ -3,6 +3,11 @@
 if [[ $1 && $1 = "personal" ]]; then  
 	git config --global user.name 	"Benjamin Palmer"
 	git config --global user.email 	"benj.c.palmer@gmail.com"
+fi 
+
+if [[ $1 && $1 = "work" ]]; then  
+	git config --global user.name 	"Benjamin Palmer"
+	git config --global user.email 	"ben.palmer@playmakercrm.com"
 fi  
 
 

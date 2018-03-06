@@ -13,6 +13,7 @@ export PATH=$PATH:~/Library/Python/3.6/bin
 export PATH=$PATH:$ANDROID_HOME
 export PATH=$PATH:$ANDROID_TOOLS
 export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
+export PATH=$PATH:~/local/bin
 
 
 export ZSH=~/.oh-my-zsh

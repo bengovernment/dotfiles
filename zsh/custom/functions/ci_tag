@@ -7,7 +7,7 @@ NC="\033[0m"
 
 
 # handy functions
-usage() { echo -e "Usage: ci_tag [-t <tf1|tf2|release>] [-m <release note>]" 1>&2;}
+usage() { echo -e "Usage: ci_tag [-t <tf|tf1|tf2|release>] [-m <release note>]" 1>&2;}
 error() { echo -e "${R}$1${NC}";}
 die() { kill -INT $$ ;}
 
@@ -55,10 +55,11 @@ done
 
 # set prefix
 case $t in
+    tf) prefix="TF" && target="testflight";;
     tf1) prefix="TF1" && target="testflight 1";;
     tf2) prefix="TF2" && target="testflight 2";;
     release) prefix="R" && target="production";;
-    *) error "Only <tf1|tf2|release> are valid options for -t" && usage && die;;
+    *) error "Only <tf|tf1|tf2|release> are valid options for -t" && usage && die;;
 esac
 
 # check for release note
