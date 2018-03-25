@@ -10,7 +10,7 @@
 
 [user] 
 	name = Benjamin Palmer
-	email = bpalmer@playmakercrm.com
+	email = benj.c.palmer@gmail.com
 
 [core]
 	autocrlf = input
@@ -25,7 +25,7 @@
 	br = branch
 	rh = reset HEAD
 	t = tag
-	cp = cherry-pickg q
+	cp = cherry-pick
 	cur = rev-parse --short HEAD
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	type = cat-file -t

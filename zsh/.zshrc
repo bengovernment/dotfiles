@@ -15,6 +15,7 @@ export PATH=$PATH:$ANDROID_TOOLS
 export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
 export PATH=$PATH:~/local/bin
 
+export SSH_KEY_PATH=~/.ssh/id_rsa
 
 export ZSH=~/.oh-my-zsh
 
@@ -76,5 +77,3 @@ i() { cd "$(cat ~/.save_dir)" ; }
 # # --follow: Follow symlinks
 # # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
-
-
