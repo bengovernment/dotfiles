@@ -31,8 +31,6 @@ alias editzsh='subl ~/oh-my-zsh'
 alias vim='/usr/local/bin/vim'
 alias v='vim'
 
-alias mux='tmuxinator'
-
 #jekyll
 alias j='jekyll'
 alias jb='jekyll build'

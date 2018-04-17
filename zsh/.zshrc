@@ -52,10 +52,6 @@ export COWPATH="$COWPATH:$HOME/.cowsay"
 
 source $ZSH/oh-my-zsh.sh
 
-
-#tmuxinator
-source "$HOME/dot/tmuxinator/.tmuxinator/tmuxinator.zsh"
-
 # #force tmux load config
 tmux source-file ~/.tmux.conf
 
