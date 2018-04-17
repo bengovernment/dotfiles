@@ -27,6 +27,9 @@ alias siri='say -v samantha'
 #zsh configs
 alias editzsh='subl ~/oh-my-zsh'
 
+#tmuxinator
+alias mux='tmuxinator'
+
 #vim
 alias vim='/usr/local/bin/vim'
 alias v='vim'

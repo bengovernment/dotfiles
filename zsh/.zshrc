@@ -1,5 +1,3 @@
-# Path to your oh-my-zsh installation.
-#
 
 # path setup
 export PATH=$PATH:~/bin
@@ -15,11 +13,7 @@ export PATH=$PATH:$ANDROID_TOOLS
 export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
 export PATH=$PATH:~/local/bin
 
-export SSH_KEY_PATH=~/.ssh/id_rsa
-
 export ZSH=~/.oh-my-zsh
-
-# add custom functions to fpath
 export ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
@@ -29,11 +23,8 @@ export ZSH_THEME="wedisagree"
 COMPLETION_WAITING_DOTS="false"
 ENABLE_CORRECTION="false"
 
-
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-
 
 #android home
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -41,19 +32,16 @@ export ANDROID_TOOLS=$ANDROID_HOME/tools
 export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
 export ANDROID_BUILD_TOOLS=$ANDROID_HOME/build-tools
 
-
-
 #editor
-export EDITOR='vim'
-
+export EDITOR='atom'
 
 # moo moos
 export COWPATH="$COWPATH:$HOME/.cowsay"
 
 source $ZSH/oh-my-zsh.sh
 
-# #force tmux load config
-tmux source-file ~/.tmux.conf
+# # #force tmux load config
+# tmux source-file ~/.tmux.conf
 
 #aliases
 source ~/dot/zsh/custom/aliases.zsh
@@ -64,6 +52,17 @@ source ~/dot/zsh/custom/functions.zsh
 s() { pwd > ~/.save_dir ; }
 i() { cd "$(cat ~/.save_dir)" ; }
 
+#plugins
+plugins=(git
+  github
+  jira
+  node
+  npm
+  osx
+  jsontools
+  sudo
+  tmux
+  tmuxinator)
 
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
