@@ -24,7 +24,7 @@ export ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
 # powerlevel theme
-export ZSH_THEME="norm"
+export ZSH_THEME="wedisagree"
 # zsh settings
 COMPLETION_WAITING_DOTS="false"
 ENABLE_CORRECTION="false"
