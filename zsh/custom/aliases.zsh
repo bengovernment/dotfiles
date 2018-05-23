@@ -49,3 +49,8 @@ alias cor='cordova'
 alias devchrome='open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir --allow-file-access-from-files'
 
 alias subl='sublime'
+
+#vividnoodle work
+alias rsyncdvn='rsync -av ~/projects/web/edge/ bpalmer@r.vividnoodle.com:~/code/vnext/ --exclude external --exclude vender --progress --delete'
+alias rsyncmob='rsync -av ~/projects/web/edge/ bpalmer@r.vividnoodle.com:/home/tc/code/mobile/vnext/ --exclude external --exclude vender --progress'
+alias rsyncvn='rsync -av ~/projects/web/edge/ bpalmer@r.vividnoodle.com:~/code/vnext/ --exclude external --exclude vender --progress'

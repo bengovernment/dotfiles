@@ -72,3 +72,9 @@ plugins=(git
 # # --follow: Follow symlinks
 # # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ben/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ben/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ben/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ben/google-cloud-sdk/completion.zsh.inc'; fi

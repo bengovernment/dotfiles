@@ -27,3 +27,4 @@ autoload -Uz myip
 autoload -Uz proxy
 autoload -Uz gituser
 autoload -Uz gpip
+autoload -Uz syncvn
