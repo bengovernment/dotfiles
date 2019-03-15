@@ -33,7 +33,7 @@ export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
 export ANDROID_BUILD_TOOLS=$ANDROID_HOME/build-tools
 
 #editor
-export EDITOR='atom'
+export EDITOR='/usr/local/bin/sublime'
 
 # moo moos
 export COWPATH="$COWPATH:$HOME/.cowsay"
@@ -78,3 +78,6 @@ if [ -f '/Users/ben/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ben/go
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ben/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ben/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
