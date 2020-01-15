@@ -20,6 +20,7 @@ source $HOME/.rvm/scripts/rvm
 # custom is where the meat of configuration happens
 ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
+fpath=(~/dot/zsh/custom/completions $fpath)
 
 # Source all custom *.zsh scripts
 source ~/.fzf.zsh

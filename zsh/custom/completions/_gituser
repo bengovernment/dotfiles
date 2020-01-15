@@ -1,0 +1,7 @@
+#compdef _gituser gituser
+
+function _gituser {
+	local paths=(~/.ssh/identities/*)
+    local filenames=($paths[@]:t)
+    compadd $filenames
+}

@@ -11,17 +11,19 @@
 # john.smith@foo.com
 
 
-usage="Example usage:
-	gituser                 ${G}shows the current git user info${NC}
-	gituser	help            ${G}show usage info${NC}
-	gituser	list            ${G}list all available identities${NC}
-	gituser [IDENTITY]      ${G}set git user to identity${NC}
+usage="${bold}usage${normal}:
+  gituser         ${G}shows the current git user info${NC}	
+  gituser <id>    ${G}set git user to identity${NC}
 
-where:
-	[IDENTITY] a text entry in ~/.ssh/identities/ of the form:
+${bold}options:${normal}
+  -h              ${G}show usage info${NC}
+  -l              ${G}list all available identities${NC}
+
+${bold}arguments:${normal}
+  <id>            ${G}a file in ~/.ssh/identities/ of the form:${NC}
 ${B}
-	John Doe
-	john.doe@foo.com
+  John Doe
+  john.doe@foo.com
 ${NC}"
 
 
@@ -32,25 +34,28 @@ success() {
 	echo "email: $(git config --global --get-all user.email)"
 }
 
-#  no arguments, output current git user
-if [[ -z $1 ]]; then
-	success
-	return 0
-fi
 
 # grab the identities
 local ids_dir=~/.ssh/identities/
 local id=$ids_dir$1
 
-# show usage entry
-if [[ $1 == "help" ]]; then
-	echo "$usage" >&2
-	return 0
-fi
 
-# show all identity options
-if [[ $1 == "list" ]]; then
-	ls -1 $ids_dir
+while getopts "hl" opt; do
+	case ${opt} in
+		h )
+			echo "$usage" >&2
+			return 0
+			;;
+		l )
+			ls -1 $ids_dir
+			return 0
+			;;	
+	esac
+done
+
+#  no arguments, output current git user
+if [[ -z $1 ]]; then
+	success
 	return 0
 fi
 
