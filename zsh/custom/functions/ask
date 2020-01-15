@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 local prompt default REPLY
 
 while true; do

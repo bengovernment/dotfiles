@@ -1,0 +1,22 @@
+#!/usr/bin/env zsh
+
+
+function alert {
+	toilet -f term -F border --gay $1
+}
+
+# homebrew
+alert " - Update Homebrew -"
+brew update --verbose
+
+alert " - Upgrade Homebrew Packages - "
+brew upgrade --verbose
+
+alert " - Upgrade Homebrew Casks - "
+brew cask upgrade --verbose
+
+#podspec
+alert " - Update Cocopod Repos - "
+pod repo update --verbose
+
+alert " - Finished. -"

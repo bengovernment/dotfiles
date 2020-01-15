@@ -1,0 +1,38 @@
+#!/usr/bin/env zsh
+
+# checks the current repo for any unstaged changes to any json file
+# and fires it off to cp for compression in ~/ for sharing with teammates.
+
+# temp dir
+
+tmp=~/mock-tmp
+mkdir -p $tmp
+
+IFS=$'\n'
+set -o noglob
+updated_files=($(git ls-files -m))
+
+echo "${Y}mock json updated: ${G} \n"
+
+for file in $updated_files
+do
+	cp $file $tmp
+	echo `basename $file`
+done
+
+echo
+echo "${NC}Will zip ${#updated_files[*]} files."
+echo "${G}Press 'y' to proceed ${NC} or any other key to cancel."
+read tmp
+
+case "$tmp" in
+	y)
+		rm -f ~/mock.zip
+		zip -vr ~/mock.zip $tmp -x "*.DS_Store" >/dev/null
+		rm -rf $tmp
+		echo "All done! Created ~/mock.zip"
+		;;
+	*)
+		kill 0
+		;;
+esac

@@ -1,56 +1,17 @@
-# bash / file system
-alias ls='ls -aG'
-alias lsd='ls -d *(/)' #list only directories
-alias lsn='ls -lt  **/*(.om[1,20])' #list newest files anywhere in cwd
-alias lse='ls *(.L0)' #list any empty files
+# the king of them all
 alias reload='exec zsh'
 
-#when running tree, grab hidden files, but not git dirs
-alias tree='tree -aC -I '.git''
+alias ls='colorls --group-directories-first --almost-all' 		 # list all files
+alias ll='colorls --group-directories-first --almost-all --long' # detailed list view
 
-#git
-alias g='git'
+alias tree='tree -aC -I '.git''		# grab hidden files, but not git dirs
 
-#cat
-alias cat='ccat'
+alias cat='ccat'					# use colorized cat
+alias g='git'						# git
 
-#web
-alias ws='python -m SimpleHTTPServer 8000'
-alias py='python3'
-#locations
-alias ohmyzsh='~/.oh-my-zsh'
+alias moo='fortune | cowsay'		# channel the wisdom of a cow
+alias siri='say -v samantha'		# speak out loud
 
-#silly stuff
-alias moo='fortune | cowsay'
-alias siri='say -v samantha'
+alias rmd='mdless'
 
-#zsh configs
-alias editzsh='subl ~/oh-my-zsh'
-
-#tmuxinator
-alias mux='tmuxinator'
-
-#vim
-alias vim='/usr/local/bin/vim'
-alias v='vim'
-
-#jekyll
-alias j='jekyll'
-alias jb='jekyll build'
-alias jbw='jekyll build --watch'
-alias jsd='jekyll serve --detach'
-alias js='jekyll serve'
-alias kjs='pkill -f jekyll'
-
-#cordova
-alias cor='cordova'
-
-#chrome
-alias devchrome='open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir --allow-file-access-from-files'
-
-alias subl='sublime'
-
-#vividnoodle work
-alias rsyncdvn='rsync -av ~/projects/web/edge/ bpalmer@r.vividnoodle.com:~/code/vnext/ --exclude external --exclude vender --progress --delete'
-alias rsyncmob='rsync -av ~/projects/web/edge/ bpalmer@r.vividnoodle.com:/home/tc/code/mobile/vnext/ --exclude external --exclude vender --progress'
-alias rsyncvn='rsync -av ~/projects/web/edge/ bpalmer@r.vividnoodle.com:~/code/vnext/ --exclude external --exclude vender --progress'
+grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'

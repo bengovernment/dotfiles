@@ -1,65 +1,54 @@
+![Doftiles](./assets/logo.png)
+
 
 ```
-_______ _______ _______ _______ _______ _______ _______ _______
-|\     /|\     /|\     /|\     /|\     /|\     /|\     /|\     /|
-| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
-| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |
-| |D  | | |O  | | |T  | | |F  | | |I  | | |L  | | |E  | | |S  | |
-| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
-|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
-
+ _________________________________________
+/ Dojo, YUI, ExtJS, jQuery UI, Ember,     \
+| Cappuccino, SproutCore, GWT, Angular,   |
+| Angular 1.2, Angular 1.3, Angular 2,    |
+| NOT-Angular 3 but Angular 4, Sencha,    |
+| jQuery Mobile, Knockout, Meteor,        |
+| Ampersand, Flight, Mithril, Polymer,    |
+| React and Flux but dont forget          |
+| ActionScript, AtScript, CoffeeScript,   |
+| Dart, JScript, LiveScript, Objective-J, |
+| Elm, JSX, JSweet and Closure Compiler.  |
+| All fixed bad coders - Guaranteed™!     |
+|                                         |
+\ ~ Colin C, emacs user                	  /
+ -----------------------------------------
+  \
+   \   \_\_    _/_/
+    \      \__/
+           (oo)\_______
+           (__)\       )\/\
+               ||----w |
+               ||     ||
 ```
-
-	 __________________________________
-	/ Bushydo -- the way of the shrub. \
-	| Bonsai! 			    |
-	\        ~Unix Fortune              /
-	 ----------------------------------
-		\   ^__^
-		 \  (oo)\_______
-		    (__)\       )\/\
-			||----w |
-			||     ||
-
-	"Dojo, YUI, ExtJS, jQuery UI, Ember, Cappuccino, SproutCore, GWT, Angular, 
-	Angular 1.2, Angular 1.3, Angular 2, NOT-Angualar 3 but Angular 4, Sencha, 
-	jQuery Mobile, Knockout, Meteor, Ampersand, Flight, Mithril, Polymer, 
-	React and Flux but don't forget ActionScript, AtScript, CoffeeScript, 
-	Dart, JScript, LiveScript, Objective-J, Elm, JSX, JSweet and  Closure Compiler.
-	All fixed bad coders - Guaranteed™!  Situations like this created Ada.
-			~ Colin Carr, 3/2017
 
   
-A repository of dotfiles and tools managed by GNU STOW, version controlled by GIT, and based upon the work of the illustrious Colin Carr. 
+A repository of dotfiles and tools managed by GNU STOW, version controlled by git, and maintained by me. 💻💖
 
-Configure all the things. 💻
+
 
 ```
- vim          			> .vimrc, configs and plugins
  git            		> global git config and aliases
- ranger             		> filebrowser config
  zsh           			> shell settings, aliases, and configs
-
  iterm2         		> default profile preferences
- htop           		> best top
- tmux				> tmux settings
- tmuxinator			> many tmuxes for good health
- fzf				> junegunn/fzf config
- cowsay				> critically important .cowfiles
- aw				> ansiweather, cute.
-
+ cowsay					> critically important .cowfiles
 ```
 
 
 ### dependencies - get 'em! ###
 
-zsh/oh-my-zsh
-fzf
-vim
-powerline fonts
-tmux
-tmuxinator
-cowsay
+- homebrew
+- rvm
+- gem
+- zsh
+- fzf
+- nerd fonts
+- spaceship prompt
+- cowsay
 
 
 [Gnu Stow](http://www.gnu.org/software/stow/manual/stow.html)
@@ -86,12 +75,3 @@ uninstall bash settings
 rescan package for new files
 
 `stow -R bash`
-
-
-
-	“All the good music has already been written by people with wigs and stuff.” 
-		                            ― Frank Zappa
-
-
-
-

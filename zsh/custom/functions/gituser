@@ -1,14 +1,80 @@
-# allows the on-the-fly swapping of your git user
+#!/usr/bin/env zsh
 
-if [[ $1 && $1 = "personal" ]]; then  
-	git config --global user.name 	"Benjamin Palmer"
-	git config --global user.email 	"benj.c.palmer@gmail.com"
-fi 
+# allows the on-the-fly swapping of your git user. 
+# select from any of the entries in ~/.ssh/identities.
+#
+# identity files should have no extension ie: "personal" or "work"
+# and formatted with 2 lines:
+#
+# ~/.ssh/identities/example
+# John Smith
+# john.smith@foo.com
 
-if [[ $1 && $1 = "work" ]]; then  
-	git config --global user.name 	"Benjamin Palmer"
-	git config --global user.email 	"ben.palmer@playmakercrm.com"
-fi  
+
+usage="Example usage:
+	gituser                 ${G}shows the current git user info${NC}
+	gituser	help            ${G}show usage info${NC}
+	gituser	list            ${G}list all available identities${NC}
+	gituser [IDENTITY]      ${G}set git user to identity${NC}
+
+where:
+	[IDENTITY] a text entry in ~/.ssh/identities/ of the form:
+${B}
+	John Doe
+	john.doe@foo.com
+${NC}"
 
 
-echo "git user is:"  $(git config --global user.email)
+# output the current git user info
+success() {
+	echo "${bold}git user is:${normal}${G}"
+	echo "name:  $(git config --global --get-all user.name)"
+	echo "email: $(git config --global --get-all user.email)"
+}
+
+#  no arguments, output current git user
+if [[ -z $1 ]]; then
+	success
+	return 0
+fi
+
+# grab the identities
+local ids_dir=~/.ssh/identities/
+local id=$ids_dir$1
+
+# show usage entry
+if [[ $1 == "help" ]]; then
+	echo "$usage" >&2
+	return 0
+fi
+
+# show all identity options
+if [[ $1 == "list" ]]; then
+	ls -1 $ids_dir
+	return 0
+fi
+
+# validate identity isn't malformed and continue
+if [[ -f $id ]]; then
+	if [[ -z $(sed '1p;d' $id) || -z $(sed '2p;d' $id) ]]; then
+		echo "${R}${bold}Identity file found at $id is malformed.${NC}${normal}"
+		echo "$usage" >&2
+		return 1
+	fi
+
+	# unset any existing values
+	git config --global --unset-all user.name
+	git config --global --unset-all user.email
+
+	# make the change with file contents
+	git config --global user.name "$(sed '1p;d' $id)"
+	git config --global user.email "$(sed '2p;d' $id)"
+
+else
+	echo "${R}${bold}No matching identity '$1' found.${NC}${normal}"
+	echo "$usage" >&2
+	return 1
+fi
+
+success
+return 0

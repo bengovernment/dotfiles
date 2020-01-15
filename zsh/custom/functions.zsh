@@ -12,19 +12,28 @@ magic-enter () {
 		zle accept-line
 	fi
 }
+
+
+# bind the magic enter
 zle -N magic-enter
 bindkey "^M" magic-enter
 
+# autoload custom functions
 
+for func in $ZSH_CUSTOM/functions/**/*(.)
+	do autoload -Uz $(basename $func)
+done
+# autoload -Uz update-tools
+# autoload -Uz ask
+# autoload -Uz desktop-cleanup
+# autoload -Uz export-mock-changes
+# autoload -Uz rmd
+# autoload -Uz myip
+# autoload -Uz proxy
+# autoload -Uz gituser
+# autoload -Uz prune-remote
 
-#autoload other funcs
-autoload -Uz ci_tag
-autoload -Uz ask
-autoload -Uz desktop-cleanup
-autoload -Uz rmd
-autoload -Uz deployblog
-autoload -Uz myip
-autoload -Uz proxy
-autoload -Uz gituser
-autoload -Uz gpip
-autoload -Uz syncvn
+# initialize completions
+
+autoload -U compinit
+compinit

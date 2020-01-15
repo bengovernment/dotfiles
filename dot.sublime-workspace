@@ -1,0 +1,480 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"update",
+				"updated_files"
+			],
+			[
+				"upda",
+				"updated_files"
+			],
+			[
+				"create",
+				"createWindow"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"acti",
+				"Activate Materialize Theme"
+			],
+			[
+				"active",
+				"Activate Materialize Theme"
+			],
+			[
+				"theme",
+				"Activate Materialize Theme"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"htmlpre",
+				"HTMLPrettify"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syntax",
+				"Set Syntax: Perl"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"jsonsort",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"prettif",
+				"HTMLPrettify"
+			],
+			[
+				"sortjs",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"swift",
+				"Set Syntax: Swift"
+			],
+			[
+				"form",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"setjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"for",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"syntjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"format",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"synjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"sort",
+				"Sort Lines by Selection"
+			],
+			[
+				"installp",
+				"Package Control: Install Package"
+			],
+			[
+				"swif",
+				"Set Syntax: Swift"
+			],
+			[
+				"snak",
+				"Convert Case: snake_case"
+			],
+			[
+				"snake",
+				"Convert Case: snake_case"
+			],
+			[
+				"sna",
+				"Convert Case: snake_case"
+			],
+			[
+				"toml",
+				"Set Syntax: TOML"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"expand",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"formatan",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"prettyj",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"jsonp",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"jsontr",
+				"JsonTree: Show Tree"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"react",
+				"Set Syntax: TypeScriptReact"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"setstype",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"hml",
+				"HTMLPrettify"
+			],
+			[
+				"h",
+				"HTMLPrettify"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"colorsc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colorsch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"us",
+				"UI: Select Theme"
+			],
+			[
+				"packaginstal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/BenPalmer/dot"
+	],
+	"file_history":
+	[
+		"/Users/BenPalmer/dot/zsh_old/custom/aliases.zsh",
+		"/Users/BenPalmer/dot/zsh_old/.zshrc",
+		"/Users/BenPalmer/dot/zsh/custom/functions/deployblog",
+		"/Users/BenPalmer/dot/zsh/custom/functions/export-mock-changes",
+		"/Users/BenPalmer/dot/zsh/.zshrc",
+		"/Users/BenPalmer/dot/zsh/custom/functions.zsh",
+		"/Users/BenPalmer/dot/zsh/custom/functions/ask",
+		"/Users/BenPalmer/dot/zsh/.oh-my-zsh/plugins/emoji/update_emoji.pl",
+		"/Users/BenPalmer/dot/zsh/custom/functions/ci_tag",
+		"/Users/BenPalmer/projects/ios/.git/untitled.json",
+		"/Users/BenPalmer/projects/ios/.git/MERGE_MSG",
+		"/Users/BenPalmer/Desktop/untitled.json",
+		"/Users/BenPalmer/projects/ios/.git/COMMIT_EDITMSG",
+		"/Users/BenPalmer/Desktop/doc-scratchpad.json",
+		"/Users/BenPalmer/.ssh/tokens/ad-access-token.txt",
+		"/Users/BenPalmer/projects/ios/Source/Compass/Info.plist",
+		"/Users/BenPalmer/Desktop/treatments.json",
+		"/Users/BenPalmer/.keys/kiku/sb.crypto",
+		"/Users/BenPalmer/projects/ios/Source/Podfile.lock",
+		"/Users/BenPalmer/Downloads/GeorgeTreatmentDetailsJSON.json",
+		"/Users/BenPalmer/Desktop/treatment-mock.json.package.json",
+		"/Users/BenPalmer/projects/KikuNote/untitled.sh",
+		"/Users/BenPalmer/projects/KikuNote/.swiftlint.yml",
+		"/Users/BenPalmer/projects/KikuNote/.git/COMMIT_EDITMSG",
+		"/Users/BenPalmer/projects/KikuNote/Podfile",
+		"/Users/BenPalmer/projects/KikuNote/PodFile",
+		"/Users/BenPalmer/Desktop/treatment-vitals-mock.json",
+		"/Users/BenPalmer/Desktop/lab-history-accordion.json.package.json",
+		"/Users/BenPalmer/projects/KikuNote/.gitignore",
+		"/Users/BenPalmer/projects/ios/.gitignore",
+		"/Users/BenPalmer/Desktop/sample-json.json",
+		"/Users/BenPalmer/Library/Application Support/Steam/steamapps/workshop/content/294100/725576127/Defs/RecipeDefs/Recipes_AdvancedProduction.xml",
+		"/Users/BenPalmer/projects/ios/Source/Podfile",
+		"/Users/BenPalmer/Desktop/google-services-stage.json",
+		"/Users/BenPalmer/projects/NomadAndroid/Source/tableview/src/main/java/com/evrencoskun/tableview/sort/RowHeaderForCellSortComparator.java",
+		"/Users/BenPalmer/Downloads/p12-password",
+		"/Users/BenPalmer/projects/blog/config.toml",
+		"/Users/BenPalmer/projects/blg/content/posts/9-11-19.md",
+		"/Users/BenPalmer/projects/egal_native/src/components/Link.tsx",
+		"/Users/BenPalmer/projects/egal_native/src/reducers/projects/projectsReducer.ts",
+		"/Users/BenPalmer/projects/egal_native/src/components/Nav.tsx",
+		"/Users/BenPalmer/projects/egal_native/src/components/pages/DocumentPreview/DocumentPreview.tsx",
+		"/Users/BenPalmer/projects/egal_native/src/reducers/navigation/navigationReducer.ts",
+		"/Users/BenPalmer/projects/egal_native/src/reducers/navigation/navigationConstants.ts",
+		"/Users/BenPalmer/projects/egal_native/src/reducers/store.ts",
+		"/Users/BenPalmer/projects/el/hello-world/main.js",
+		"/Users/BenPalmer/projects/el/hello-world/index.html",
+		"/Users/BenPalmer/projects/el/hello-world/package.json",
+		"/Users/BenPalmer/projects/ios/Source/Compass/Common/TabularModule/TabularCollectionCell.xib",
+		"/Users/BenPalmer/projects/ios/Source/README.md",
+		"/Users/BenPalmer/Desktop/duplicate-quickcomments.json",
+		"/Users/BenPalmer/Desktop/Health Data.csv",
+		"/Users/BenPalmer/Desktop/sample.json",
+		"/Users/BenPalmer/Desktop/access-document-details-resp.json",
+		"/Users/BenPalmer/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.nodejs":
+	{
+		"height": 126.0
+	},
+	"pinned_build_system": "",
+	"project": "dot.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

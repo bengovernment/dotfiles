@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+# prune-remote
+
+git branch -r | awk -F/ '/\/ben/{print $2"/"$3}' | xargs -I {} git push origin :{}

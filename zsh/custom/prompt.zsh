@@ -1,0 +1,111 @@
+# prompt text style utils
+
+Y="\033[1;33m"
+R="\033[0;31m"
+G="\033[0;32m"
+B="\033[0;34m"
+NC="\033[0m"
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+# fzf behaviors
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+
+# spaceship configuration
+SPACESHIP_PROMPT_ORDER=(
+  time
+  user
+  host
+  dir
+  git
+  xcode
+  swift
+  line_sep
+  char
+)
+
+# PROMPT
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_CHAR_SYMBOL="\uf0ad"
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=true
+SPACESHIP_PROMPT_PREFIXES_SHOW=true
+SPACESHIP_PROMPT_SUFFIXES_SHOW=true
+SPACESHIP_PROMPT_DEFAULT_PREFIX="via "
+SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "
+# TIME
+SPACESHIP_TIME_SHOW=false
+SPACESHIP_TIME_PREFIX="at "
+SPACESHIP_TIME_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_TIME_FORMAT=false
+SPACESHIP_TIME_12HR=false
+SPACESHIP_TIME_COLOR="yellow"
+# USER
+SPACESHIP_USER_SHOW=true
+SPACESHIP_USER_PREFIX="with "
+SPACESHIP_USER_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_USER_COLOR="yellow"
+SPACESHIP_USER_COLOR_ROOT="red"
+# HOST
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_HOST_PREFIX="at "
+SPACESHIP_HOST_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_HOST_COLOR="green"
+# DIR
+SPACESHIP_DIR_SHOW=true
+SPACESHIP_DIR_PREFIX="in "
+SPACESHIP_DIR_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_DIR_TRUNC=3
+SPACESHIP_DIR_COLOR="cyan"
+# GIT
+SPACESHIP_GIT_SHOW=true
+SPACESHIP_GIT_PREFIX="on "
+SPACESHIP_GIT_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_GIT_SYMBOL=" "
+# GIT BRANCH
+SPACESHIP_GIT_BRANCH_SHOW=true
+SPACESHIP_GIT_BRANCH_PREFIX="$SPACESHIP_GIT_SYMBOL"
+SPACESHIP_GIT_BRANCH_SUFFIX=""
+SPACESHIP_GIT_BRANCH_COLOR="magenta"
+# GIT STATUS
+SPACESHIP_GIT_STATUS_SHOW=true
+SPACESHIP_GIT_STATUS_PREFIX=" ["
+SPACESHIP_GIT_STATUS_SUFFIX="]"
+SPACESHIP_GIT_STATUS_COLOR="yellow"
+SPACESHIP_GIT_STATUS_UNTRACKED="?"
+SPACESHIP_GIT_STATUS_ADDED="+"
+SPACESHIP_GIT_STATUS_MODIFIED="!"
+SPACESHIP_GIT_STATUS_RENAMED="»"
+SPACESHIP_GIT_STATUS_DELETED="✘"
+SPACESHIP_GIT_STATUS_STASHED="$"
+SPACESHIP_GIT_STATUS_UNMERGED="="
+SPACESHIP_GIT_STATUS_AHEAD="⇡"
+SPACESHIP_GIT_STATUS_BEHIND="⇣"
+SPACESHIP_GIT_STATUS_DIVERGED="⇕"
+
+
+# autopair configuration
+AUTOPAIR_LBOUNDS=(all '[.:/\!]')
+AUTOPAIR_LBOUNDS+=(quotes '[]})a-zA-Z0-9]')
+AUTOPAIR_LBOUNDS+=(spaces '[^{([]')
+AUTOPAIR_LBOUNDS+=(braces '')
+AUTOPAIR_LBOUNDS+=('`' '`')
+AUTOPAIR_LBOUNDS+=('"' '"')
+AUTOPAIR_LBOUNDS+=("'" "'")
+
+AUTOPAIR_RBOUNDS=(all '[[{(<,.:?/%$!a-zA-Z0-9]')
+AUTOPAIR_RBOUNDS+=(quotes '[a-zA-Z0-9]')
+AUTOPAIR_RBOUNDS+=(spaces '[^]})]')
+AUTOPAIR_RBOUNDS+=(braces '')
+
+
+# better completion matchers
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*:parameters'  list-colors '=*=32'
+zstyle ':completion:*:commands' list-colors '=*=1;31'
+zstyle ':completion:*:builtins' list-colors '=*=1;38;5;142'
+zstyle ':completion:*:aliases' list-colors '=*=2;38;5;128'
+zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
+
+zstyle ':completion:*' menu select
+

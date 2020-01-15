@@ -5,12 +5,12 @@
 	insteadOf = git://github
 
 [remote "origin"]
-    fetch = +refs/heads/*:refs/remotes/origin/*
-    fetch = +refs/tags/*:refs/tags/*
+   fetch = +refs/heads/*:refs/remotes/origin/*
+   fetch = +refs/tags/*:refs/tags/*
 
 [user] 
-	name = Benjamin Palmer
 	email = benj.c.palmer@gmail.com
+	name = Ben Palmer
 
 [core]
 	autocrlf = input

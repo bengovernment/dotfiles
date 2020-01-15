@@ -1,83 +1,40 @@
+#	         _
+#	 _______| |__        _ __ ___
+#	|_  / __| '_ \      | '__/ __|
+#	 / /\__ \ | | |  _  | | | (__
+#	/___|___/_| |_| (_) |_|  \___|
+#
+#
 
-# path setup
-export PATH=$PATH:~/bin
-export PATH=$PATH:~/scripts
-export PATH=$PATH:/usr/bin
+export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/usr/local
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:~/Library/Python/2.7/bin
-export PATH=$PATH:~/Library/Python/3.6/bin
+
+# Android development
 export PATH=$PATH:$ANDROID_HOME
 export PATH=$PATH:$ANDROID_TOOLS
 export PATH=$PATH:$ANDROID_PLATFORM_TOOLS
-export PATH=$PATH:~/local/bin
 
-export ZSH=~/.oh-my-zsh
-export ZSH_CUSTOM=$HOME/dot/zsh/custom
+# let zsh know how we manage rubies
+source $HOME/.rvm/scripts/rvm
+
+# custom is where the meat of configuration happens
+ZSH_CUSTOM=$HOME/dot/zsh/custom
 fpath=(~/dot/zsh/custom/functions $fpath)
 
-# powerlevel theme
-export ZSH_THEME="wedisagree"
-# zsh settings
-COMPLETION_WAITING_DOTS="false"
-ENABLE_CORRECTION="false"
+# Source all custom *.zsh scripts
+source ~/.fzf.zsh
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
+source $ZSH_CUSTOM/plugins.zsh
+source $ZSH_CUSTOM/aliases.zsh
+source $ZSH_CUSTOM/functions.zsh
+source $ZSH_CUSTOM/prompt.zsh
 
-#android home
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export ANDROID_TOOLS=$ANDROID_HOME/tools
-export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
-export ANDROID_BUILD_TOOLS=$ANDROID_HOME/build-tools
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
-#editor
-export EDITOR='/usr/local/bin/sublime'
-
-# moo moos
-export COWPATH="$COWPATH:$HOME/.cowsay"
-
-source $ZSH/oh-my-zsh.sh
-
-# # #force tmux load config
-# tmux source-file ~/.tmux.conf
-
-#aliases
-source ~/dot/zsh/custom/aliases.zsh
-source ~/dot/zsh/custom/functions.zsh
-
-
-# save cwd
-s() { pwd > ~/.save_dir ; }
-i() { cd "$(cat ~/.save_dir)" ; }
-
-#plugins
-plugins=(git
-  github
-  jira
-  node
-  npm
-  osx
-  jsontools
-  sudo
-  tmux
-  tmuxinator)
-
-#fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# # --files: List files that would be searched but do not search
-# # --no-ignore: Do not respect .gitignore, etc...
-# # --hidden: Search hidden files and folders
-# # --follow: Follow symlinks
-# # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ben/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ben/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ben/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ben/google-cloud-sdk/completion.zsh.inc'; fi
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Add RVM to PATH for scripting.
+# Make sure these are the last PATH variable changes.
+export PATH=$PATH:$HOME/.rvm/bin
+export PATH=$HOME/.rvm/gems/ruby-2.6.3/bin:$PATH
