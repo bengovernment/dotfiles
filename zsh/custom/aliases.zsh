@@ -12,6 +12,4 @@ alias g='git'						# git
 alias moo='fortune | cowsay'		# channel the wisdom of a cow
 alias siri='say -v samantha'		# speak out loud
 
-alias rmd='mdless'
-
 grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
