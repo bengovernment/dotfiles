@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# check if we're in **/work/**
+if [[ -z $(pwd | ack "/work/") ]]
+then
+	# we're not in a work repo, nothing to do.
+	exit 0
+fi
+
+# grab the identities
+ids_dir=~/.ssh/identities/
+work_identity=$ids_dir/work
+
+red='\033[0;31m'
+
+# make sure that the 'work' identity exists and is in use.
+
+if [[ ! -f $work_identity ]]
+then
+	# file not found
+	echo "${red}identity 'work' does not exist. Please run gituser -h"
+	exit 1
+fi
+
+
+
+# make sure work identity email matches email returned by git.
+id_email=$(sed '2p;d' $work_identity)
+actual_email=$(git config --global user.email)
+
+# variable contents comparison to avoid hard-to-debug whitespace problems
+id_odx=$(echo "$id_email" | od -x)
+actual_odx=$(echo "$actual_email" | od -x)
+
+if [[ $id_odx != $actual_odx ]]
+then
+	echo "${red}"$id_email" != "$actual_email""
+	echo "${red}You aren't using your work identity. Switch to it with gituser."
+	exit 1
+fi
