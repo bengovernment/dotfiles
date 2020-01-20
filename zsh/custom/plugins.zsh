@@ -5,11 +5,13 @@ source $ZPLUG_HOME/init.zsh
 zplug "b4b4r07/zplug-doctor", lazy:yes, use:zplug-doctor
 
 # theme
+zplug "chrissicool/zsh-256color"
+
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 ZSH_THEME="denysdovhan/spaceship-prompt"
 
+
 # prompt plugins
-zplug "djui/alias-tips"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "hlissner/zsh-autopair", defer:2
 
