@@ -29,7 +29,6 @@ ${NC}"
 
 # output the current git user info
 success() {
-	echo "${bold}git user is:${normal}${G}"
 	echo "name:  $(git config --global --get-all user.name)"
 	echo "email: $(git config --global --get-all user.email)"
 }
