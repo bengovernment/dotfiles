@@ -4,13 +4,11 @@
 [url "https://github"]
 	insteadOf = git://github
 
-[remote "origin"]
-   fetch = +refs/heads/*:refs/remotes/origin/*
-   fetch = +refs/tags/*:refs/tags/*
 [core]
 	autocrlf = input
 	safecrlf = true
 	excludesfile = /Users/ben/.gitignore_global
+	hooksPath =~/dot/git/hooks/
 
 [alias]
 	co = checkout 
@@ -29,6 +27,7 @@
 	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 	lg =  log --stat --abbrev-commit --decorate --name-status  --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%ar%C(reset), %C(bold red)%cn%C(reset)%C(bold yellow)%d%C(reset) %n%C(yellow)%s%n%C(reset)'
     am = merge --abort
+    pu = push -u
     skip = update-index --skip-worktree
     unskip = update-index --no-skip-worktree
     skipped = ! git ls-files -v|grep '^S'
