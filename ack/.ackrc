@@ -1,0 +1,8 @@
+# Always sort the files
+--sort-files
+
+--color-match=green bold
+--color-filename=ansi98 bold
+--color-lineno=ansi227
+
+--group
