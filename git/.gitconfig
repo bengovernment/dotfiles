@@ -9,25 +9,30 @@
 	safecrlf = true
 	excludesfile = /Users/ben/.gitignore_global
 	hooksPath =~/dot/git/hooks/
+	pager = delta --dark --theme="zenburn" --highlight-removed
+
 
 [alias]
+
+	# general use
 	co = checkout 
 	ci = commit -m
 	cur = rev-parse --short head 
 	st = status
 	br = branch
 	rh = reset HEAD
-	t = tag
+	am = merge --abort
+    pu = push -u
+    cur = rev-parse --short HEAD
 	cp = cherry-pick
-	cur = rev-parse --short HEAD
+	
+	# fancy logging
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-	type = cat-file -t
-	dump = cat-file -p
 	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 	lg =  log --stat --abbrev-commit --decorate --name-status  --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%ar%C(reset), %C(bold red)%cn%C(reset)%C(bold yellow)%d%C(reset) %n%C(yellow)%s%n%C(reset)'
-    am = merge --abort
-    pu = push -u
+
+    # worktree shenanigans
     skip = update-index --skip-worktree
     unskip = update-index --no-skip-worktree
     skipped = ! git ls-files -v|grep '^S'
@@ -47,10 +52,18 @@
 	remote = green
 
 [color "diff"]
- 	meta = yellow bold
- 	frag = magenta bold
- 	old = red bold
- 	new = green bold
+	meta = 11
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	commit = yellow bold
+	whitespace = red reverse
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
 
 [color "status"]
   	added = yellow bold

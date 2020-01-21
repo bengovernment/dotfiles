@@ -2,18 +2,20 @@
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-zplug "b4b4r07/zplug-doctor", lazy:yes, use:zplug-doctor
-
 # theme
 zplug "chrissicool/zsh-256color"
-
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 ZSH_THEME="denysdovhan/spaceship-prompt"
+
+
+# git plugins
+zplug 'wfxr/forgit'
 
 
 # prompt plugins
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "hlissner/zsh-autopair", defer:2
+
 
 # borrowed from omz
 zplug "plugins/gitfast", from:oh-my-zsh
