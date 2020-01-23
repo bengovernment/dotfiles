@@ -31,6 +31,7 @@ source $ZSH_CUSTOM/plugins.zsh
 source $ZSH_CUSTOM/aliases.zsh
 source $ZSH_CUSTOM/functions.zsh
 source $ZSH_CUSTOM/prompt.zsh
+source $ZSH_CUSTOM/iosctl.zsh
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000

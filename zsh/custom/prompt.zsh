@@ -12,17 +12,17 @@ normal=$(tput sgr0)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 # forgit fzf options
-export FORGIT_ADD_FZF_OPTS=''
-export FORGIT_LOG_FZF_OPTS=''
-export FORGIT_IGNORE_FZF_OPTS=''
-export FORGIT_DIFF_FZF_OPTS='--delimiter / --with-nth -1'
-export FORGIT_RESET_HEAD_FZF_OPTS=''
-export FORGIT_CHECKOUT_FZF_OPTS=''
-export FORGIT_STASH_FZF_OPTS=''
-export FORGIT_CLEAN_FZF_OPTS=''
+FORGIT_ADD_FZF_OPTS=''
+FORGIT_LOG_FZF_OPTS=''
+FORGIT_IGNORE_FZF_OPTS=''
+FORGIT_DIFF_FZF_OPTS='--delimiter / --with-nth -1'
+FORGIT_RESET_HEAD_FZF_OPTS=''
+FORGIT_CHECKOUT_FZF_OPTS=''
+FORGIT_STASH_FZF_OPTS=''
+FORGIT_CLEAN_FZF_OPTS=''
 
 # forgit options
-export FORGIT_FZF_DEFAULT_OPTS="
+FORGIT_FZF_DEFAULT_OPTS="
 --exact
 --border
 --cycle
@@ -30,6 +30,14 @@ export FORGIT_FZF_DEFAULT_OPTS="
 --height '80%'
 "
 
+# git touchbar for iterm2
+TOUCHBAR_GIT_ENABLED=true
+GIT_UNCOMMITTED="+"
+GIT_UNSTAGED="!"
+GIT_UNTRACKED="?"
+GIT_STASHED="$"
+GIT_UNPULLED="⇣"
+GIT_UNPUSHED="⇡"
 
 # spaceship prompt options
 SPACESHIP_PROMPT_ORDER=(
