@@ -5,6 +5,7 @@ magic-enter () {
 			echo -ne '\n'
 			git status -sb
         else
+        	echo -ne '\n'
             ls
 		fi
 		zle accept-line
@@ -23,17 +24,8 @@ bindkey "^M" magic-enter
 for func in $ZSH_CUSTOM/functions/**/*(.)
 	do autoload -Uz $(basename $func)
 done
-# autoload -Uz update-tools
-# autoload -Uz ask
-# autoload -Uz desktop-cleanup
-# autoload -Uz export-mock-changes
-# autoload -Uz rmd
-# autoload -Uz myip
-# autoload -Uz proxy
-# autoload -Uz gituser
-# autoload -Uz prune-remote
 
 # initialize completions
 
 autoload -U compinit
-compinit
+compinit -D

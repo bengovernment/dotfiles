@@ -6,6 +6,8 @@
 #
 #
 
+export EDITOR="nvim"
+
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/bin
 
