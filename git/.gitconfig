@@ -9,8 +9,6 @@
 	safecrlf = true
 	excludesfile = /Users/ben/.gitignore_global
 	hooksPath =~/dot/git/hooks/
-	pager = delta --dark --theme="zenburn" --highlight-removed
-
 
 [alias]
 
@@ -37,9 +35,6 @@
     unskip = update-index --no-skip-worktree
     skipped = ! git ls-files -v|grep '^S'
 
-[merge]
-	tool = opendiff
-
 [color]
 	ui = true
 	branch = auto
@@ -50,20 +45,6 @@
 	current = yellow reverse
 	local = yellow
 	remote = green
-
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	commit = yellow bold
-	whitespace = red reverse
-
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
 
 [color "status"]
   	added = yellow bold
