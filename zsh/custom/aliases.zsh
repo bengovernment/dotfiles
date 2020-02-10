@@ -16,3 +16,4 @@ alias pathdump='echo -e ${PATH//:/\\n}' # print formatted $PATH
 alias vi='nvim'
 alias vim='nvim'
 
+alias dot='subl ~/dot/dot.sublime-project'
