@@ -16,7 +16,6 @@ zplug "supercrabtree/k"
 
 # prompt plugins
 zplug "zsh-users/zsh-syntax-highlighting"
-zplug "hlissner/zsh-autopair", defer:2
 
 
 # borrowed from omz

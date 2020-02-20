@@ -1,4 +1,5 @@
 # prompt text style utils
+TERM=xterm
 
 Y="\033[1;33m"
 R="\033[0;31m"
@@ -21,14 +22,6 @@ FORGIT_CHECKOUT_FZF_OPTS=''
 FORGIT_STASH_FZF_OPTS=''
 FORGIT_CLEAN_FZF_OPTS=''
 
-# forgit options
-FORGIT_FZF_DEFAULT_OPTS="
---exact
---border
---cycle
---reverse
---height '80%'
-"
 
 # git touchbar for iterm2
 TOUCHBAR_GIT_ENABLED=true
@@ -137,3 +130,8 @@ zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33
 
 zstyle ':completion:*' menu select
 
+
+# Skip forward/back a word with opt-arrow
+bindkey "^[[1;9C" forward-word
+bindkey "^[[1;9D" backward-word
+# bindkey "^" backward-kill-word
