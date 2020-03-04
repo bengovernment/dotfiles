@@ -1,8 +1,8 @@
 # the king of them all
 alias reload='exec zsh'
 
-alias ls='colorls --gs --group-directories-first --almost-all' 		 # list all files
-alias ll='colorls --gs --group-directories-first --almost-all --long' # detailed list view
+alias ls='ls -aG'
+alias ll='ls -la' # detailed list view
 
 alias tree='tree -aC -I '.git''		# grab hidden files, but not git dirs
 

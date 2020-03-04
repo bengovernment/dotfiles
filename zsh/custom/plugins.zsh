@@ -11,7 +11,6 @@ ZSH_THEME="denysdovhan/spaceship-prompt"
 # git plugins
 zplug 'wfxr/forgit'
 zplug 'iam4x/zsh-iterm-touchbar'
-zplug "supercrabtree/k"
 
 
 # prompt plugins
@@ -23,9 +22,6 @@ zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/autojump", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "plugins/copydir", from:oh-my-zsh
-
-# silly plugins
-zplug "pxgamer/quoter-zsh"
 
 
 # install missing plugins
